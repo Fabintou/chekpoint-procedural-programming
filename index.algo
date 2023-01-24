@@ -1,0 +1,14 @@
+ { Calcul du produit scalaire de 2 vecteurs  }
+002  { materialises par des tableaux de reels    }
+003  
+004  fonction nombreOccurences(t1,t2) : reel
+005    Donnees t1 : tableau [N] de reel     { premier tableau de reels              }
+006            t2 : tableau [N] de reel     { second tableau de reels               }
+007    Locales i : entier                   { variable indice de boucle pour        }
+008            ps : reel                    { variable cumul resultat               }
+009    ps := 0.0
+010    pour i de 0 à N-1 faire
+011      ps := ps + t1[i]*t2(i]
+012    fait
+013    Resultat : ps
+014  fin action
